@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      span {
+        font-weight: 100px;
+      }
+      .tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+   .tab button {
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+ font-size: 17px;
+}
+   .tab button:hover {
+ background-color: #ddd;
+}
+.tab button.active {
+ background-color: #ccc;
+}
+   </style>
+</head>
+<nav>
+  <div class="tab">
+    <button class="./Resume-index.html"  onclick="openCity(event, 'London')"><a href="./Resume-index.html">Home</a></button>
+    <button class="./Resume-Education.html" onclick="openCity(event, 'London')"><a href="./Resume-Education.html">Education</a></button>
+    <button class="./Resume-Work.html" onclick="openCity(event, 'London')"><a href="./Resume-Work.html">Work</a></button>
+    <button class="./Resume-Contact.html" onclick="openCity(event, 'London')"><a href="./Resume-Contact.html">Contact</a></button>
+</div>
+  </nav>
+  <hr>
+<body>
+     <h1>Contact me</h1>
+
+     <form action="/action_page.php">
+        <fieldset style="width:300px">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"autofocus><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="lname">Nick name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        
+        <form action="/action_page.php">
+            <label for="lname">Gender:</label><br>
+            <select id="gender" name="gender">
+                <option value="Female">Select...</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select><br><br>
+          </form>
+
+        <form action="/action_page.php">
+            <label for="fname">Massage:</label><br>
+            <textarea name="message" style="width:250px; height:200px;"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+    </fieldset>
+      </form>
+</body>
+</html>  
